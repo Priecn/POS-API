@@ -65,6 +65,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        System.out.println("test");
         http
                 // we don't need CSRF because our token is invulnerable
                 .csrf().disable()
